@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bible Flash Cards</title>
+    <style>
+      #divVerseText {
+        display: none;
+        width: 300px;
+        height: 100px;
+      }
+      #btnToggle {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="divTestament">
+      <label for="testament">Testament </label>
+      <select id="testament" name="testament">
+        <option value="Select" selected>Select</option>
+        <option value="Old">Old</option>
+        <option value="New">New</option>
+      </select>
+    </div>
+    <div id="divOldTestamentBook">
+      <label for="book">Book </label>
+      <select id="book" name="book"></select>
+    </div>
+
+    <div id="divChapter">
+      <label for="chapter">Chapter </label>
+      <select id="chapter" name="chapter"></select>
+    </div>
+    <div id="divVerse">
+      <label for="verse">Verse </label>
+      <select id="verse" name="verse"></select>
+    </div>
+    <div>
+      <button type="button" id="btnToggle">Show/Hide</button>
+    </div>
+    <div id="divVerseText">
+      <label id="lblVerseText" for="verseText">Content </label><br />
+      <textarea id="verseText"></textarea>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -76,12 +76,20 @@ function getVerseContent(testaments) {
                   document.getElementById("verse").value
                 ) {
                   const lblVerseText = document.getElementById("lblVerseText");
-                  lblVerseText.textContent =
-                    ("Book: ",
-                    getBook.value,
-                    " Chapter: ",
-                    document.getElementById("chapter").value);
+                  let lblbookName = getOldTestamentName(getBook.value);
+                  let lblChapter = document.getElementById("chapter").value;
+                  let lblVerseNumber = verse.getAttribute("number");
+                  lblVerseText.innerHTML =
+                    lblbookName +
+                    "; Chapter: " +
+                    lblChapter +
+                    ", Verse " +
+                    lblVerseNumber;
                   verseText.value = verse.textContent;
+                  console.log("book ", lblbookName);
+                  console.log("chapter: ", lblChapter);
+                  //  document.getElementById("chapter").value
+                  //);
                 }
               }
             }
@@ -117,7 +125,7 @@ function getVerses(testaments) {
               console.log(verses);
               for (const verse of verses) {
                 const option = document.createElement("option");
-                option.value = verse.getAttribute("number"); // Assuming "number" is an attribute of "chapter"
+                option.value = verse.getAttribute("number");
                 option.textContent = verse.getAttribute("number");
                 selectVerse.appendChild(option);
               }

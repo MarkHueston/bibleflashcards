@@ -1,0 +1,88 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Title */
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Container for Dropdowns */
+  #selectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Verse Content Section */
+  #verseContainer {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+  }
+  
+  #lblVerseText {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  textarea {
+    width: 80%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  /* Toggle Button */
+  #btnToggle {
+    display: none;
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #btnToggle:hover {
+    background-color: #0056b3;
+  }
+  
